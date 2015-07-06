@@ -73,13 +73,13 @@
                         alert(message);
 
                         if (score >= 4) {
-                          alert(userName + ", You got " + score + " out of 5 correct. You know your stuff!");
+                          message = userName + ", You got " + score + " out of 5 correct. You know your stuff!";
                         }  else if (score == 3) {
-                            alert(userName + ", You got " + score + " out of 5 correct. Meh. You might like beer.");
+                            message = userName + ", You got " + score + " out of 5 correct. Meh. You might like beer.";
                           }  else {
-                              alert(userName + ", Maybe you're more of a whiskey drinker? You only got " + score + " out of 5 correct.");
+                              message = userName + ", Maybe you're more of a whiskey drinker? You only got " + score + " out of 5 correct.";
                           };
-
+                            alert(message);
   </script>
 
 
