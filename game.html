@@ -4,10 +4,15 @@
 
   <script>
         var answer1 = "STONE";
-            answer2 = "SOUND"
-            answer3 = "BALLAST POINT"
-            answer4 = "DOGFISH HEAD"
-            answer5 = "ELYSIAN"
+            answer2 = "SOUND";
+            answer3 = "BALLAST POINT";
+            answer4 = "DOGFISH HEAD";
+            answer5 = "ELYSIAN";
+            answer1b = "STONE BREWING";
+            answer2b = "SOUND BREWERY";
+            answer3b = "BALLAST POINT BREWING";
+            answer4b = "DOGFISH HEAD BREWERY";
+            answer5b = "ELYSIAN BREWING";
 
         var question1,
             question2,
@@ -23,34 +28,34 @@
             console.log(userName);
 
             question1 = prompt("Who makes 'Ruination IPA'?");
-                          if (question1.toUpperCase() == answer1) {
+                          if (question1.toUpperCase() == answer1 || answer1b) {
                             message = "Correct!";
                             score += 1;
                           } else {
-                            message = "Sorry, the correct answer is " + answer1 + ".";
+                            message = "Sorry, the correct answer is " + answer1b + ".";
                           }
                           alert(message);
 
             question2 = prompt("Which Poulsbo brewery produces 'Humulo Nimbus'?");
-                          if (question2.toUpperCase() == answer2) {
+                          if (question2.toUpperCase() == answer2 || answer2b) {
                             message = "Correct!";
                             score += 1;
                           } else {
-                            message = "This was a little harder. The correct answer is " + answer2 + ".";
+                            message = "This was a little harder. The correct answer is " + answer2b + ".";
                           };
                           alert(message);
 
             question3 = prompt("Who produces the delicious 'Grapefruit Sculpin IPA'?");
-                          if (question3.toUpperCase() == answer3) {
+                          if (question3.toUpperCase() == answer3 || answer3b) {
                             message = "Correct!";
                             score += 1;
                           } else {
-                            message = "This one was easier than the last one. The correct answer is " + answer3 + ".";
+                            message = "This one was easier than the last one. The correct answer is " + answer3b + ".";
                           };
                           alert(message);
 
             question4 = prompt("Which brewery should I visit to try the famous '120 Minute IPA'?");
-                          if (question4.toUpperCase() == answer4) {
+                          if (question4.toUpperCase() == answer4 || answer4b) {
                             message = "Correct!";
                             score += 1;
                           } else {
@@ -59,11 +64,11 @@
                           alert(message);
 
             question5 = prompt("Which brewer of 'Superfuzz' was recently bought with Budweiser money?");
-                        if (question5.toUpperCase() == answer5) {
+                        if (question5.toUpperCase() == answer5 || answer5b) {
                           message = "Nailed it.";
                           score += 1;
                         } else {
-                          message = "WRONG!";
+                          message = "WRONG! " + answer5 + " is the correct answer";
                         };
                         alert(message);
 
