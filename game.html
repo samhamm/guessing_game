@@ -1,0 +1,80 @@
+<!-- Guessing Game Assignment -->
+
+<!DOCTYPE Html>
+
+  <script>
+        var answer1 = "STONE";
+            answer2 = "SOUND"
+            answer3 = "BALLAST POINT"
+            answer4 = "DOGFISH HEAD"
+            answer5 = "ELYSIAN"
+
+        var question1,
+            question2,
+            question3,
+            question4,
+            question5,
+            message;
+
+            var score = 0;
+
+            var userName = prompt("Let's play a guessing game. Can you guess the brewery that produces each beer? Type your name to continue.");
+
+            console.log(userName);
+
+            question1 = prompt("Who makes 'Ruination IPA'?");
+                          if (question1.toUpperCase() == answer1) {
+                            message = "Correct!";
+                            score += 1;
+                          } else {
+                            message = "Sorry, the correct answer is " + answer1 + ".";
+                          }
+                          alert(message);
+
+            question2 = prompt("Which Poulsbo brewery produces 'Humulo Nimbus'?");
+                          if (question2.toUpperCase() == answer2) {
+                            message = "Correct!";
+                            score += 1;
+                          } else {
+                            message = "This was a little harder. The correct answer is " + answer2 + ".";
+                          };
+                          alert(message);
+
+            question3 = prompt("Who produces the delicious 'Grapefruit Sculpin IPA'?");
+                          if (question3.toUpperCase() == answer3) {
+                            message = "Correct!";
+                            score += 1;
+                          } else {
+                            message = "This one was easier than the last one. The correct answer is " + answer3 + ".";
+                          };
+                          alert(message);
+
+            question4 = prompt("Which brewery should I visit to try the famous '120 Minute IPA'?");
+                          if (question4.toUpperCase() == answer4) {
+                            message = "Correct!";
+                            score += 1;
+                          } else {
+                            message = "Another easy one you missed. Have you ever heard of " + answer4 + "?";
+                          };
+                          alert(message);
+
+            question5 = prompt("Which brewer of 'Superfuzz' was recently bought with Budweiser money?");
+                        if (question5.toUpperCase() == answer5) {
+                          message = "Nailed it.";
+                          score += 1;
+                        } else {
+                          message = "WRONG!";
+                        };
+                        alert(message);
+
+                        if (score >= 4) {
+                          alert(userName + ", You got " + score + " out of 5 correct. You know your stuff!");
+                        }  else if (score == 3) {
+                            alert(userName + ", You got " + score + " out of 5 correct. Meh. You might like beer.");
+                          }  else {
+                              alert(userName + ", Maybe you're more of a whiskey drinker? You only got " + score + " out of 5 correct.");
+                          };
+
+  </script>
+
+
