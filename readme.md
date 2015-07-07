@@ -1,5 +1,7 @@
 Beer Geek Guessing Game
 
+I LOVE BEER
+
 Welcome to the 'Beer Geek Guessing Game'.
 
 ## How it works ##
